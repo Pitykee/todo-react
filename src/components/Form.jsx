@@ -1,4 +1,4 @@
-import {} from "react";
+import { useContext } from "react";
 
 // bootstrap
 import { Col, Container, Row } from "react-bootstrap";
@@ -11,6 +11,7 @@ import List from "./List";
 import { TodoContext } from "../context/TodoContext";
 
 const Form = () => {
+  const { tasks } = useContext(TodoContext);
   return (
     <Container>
       <Row>
@@ -20,7 +21,9 @@ const Form = () => {
       </Row>
       <Row>
         <Col className="mb-3">
-          <List />
+          {tasks.map((task) => (
+            <List task={task} key={task.id} />
+          ))}
         </Col>
       </Row>
       <Row>
