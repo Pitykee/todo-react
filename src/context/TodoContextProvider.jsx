@@ -31,7 +31,13 @@ export const TodoContextProvider = ({ children }) => {
 
   return (
     <TodoContext.Provider
-      value={{ tasks, setTasks, onToggleTask, onDeleteTask, onSetTasks }}
+      value={{
+        tasks,
+        setTasks,
+        onToggleTask,
+        onDeleteTask,
+        onSetTasks,
+      }}
     >
       {children}
     </TodoContext.Provider>

@@ -1,5 +1,4 @@
 import {} from "react";
-import "./App.css";
 
 // bootstrap
 import { Container } from "react-bootstrap";
@@ -9,11 +8,11 @@ import Form from "./components/Form";
 
 function App() {
   return (
-    <>
+    <div className="app">
       <Container>
         <Form />
       </Container>
-    </>
+    </div>
   );
 }
 

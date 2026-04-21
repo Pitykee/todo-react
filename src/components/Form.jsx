@@ -20,7 +20,7 @@ const Form = () => {
         </Col>
       </Row>
       <Row>
-        <Col className="mb-3">
+        <Col className="mb-5">
           {tasks.map((task) => (
             <List task={task} key={task.id} />
           ))}

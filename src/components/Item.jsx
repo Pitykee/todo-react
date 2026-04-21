@@ -22,7 +22,7 @@ const Item = () => {
   };
   return (
     <Card>
-      <CardBody className="d-flex gap-3">
+      <CardBody className="d-flex gap-3 shadow-lg">
         <FormControl
           value={todo}
           type="text"
