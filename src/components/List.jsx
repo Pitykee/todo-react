@@ -54,10 +54,12 @@ const List = ({ task }) => {
         className="border-0 shadow-lg"
       >
         <Modal.Header closeButton className="border-0">
-          <Modal.Title>Törlés megerősítése</Modal.Title>
+          <Modal.Title className="w-100 text-center">
+            Törlés megerősítése
+          </Modal.Title>
         </Modal.Header>
 
-        <Modal.Body className="">
+        <Modal.Body className="text-center">
           Biztosan törölni szeretnéd ezt a feladatot?
         </Modal.Body>
 
