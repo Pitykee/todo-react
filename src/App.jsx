@@ -1,18 +1,16 @@
 import {} from "react";
 
 // bootstrap
-import { Container } from "react-bootstrap";
+import {} from "react-bootstrap";
 
-// components
-import Form from "./components/Form";
+// page
+import Tippmix from "./page/Tippmix";
 
 function App() {
   return (
-    <div className="app">
-      <Container>
-        <Form />
-      </Container>
-    </div>
+    <>
+      <Tippmix />
+    </>
   );
 }
 
